@@ -10,6 +10,7 @@ It responds to user inputs based on predefined rules and also includes a **Graph
 * Tkinter (for GUI)
 ## 📁 Project Structure:
 rule_based_chatbot/
+
 │── chatbot_gui.py              
 │── README.md
 ## ▶️ How to Run

@@ -1,28 +1,30 @@
 # 🎮 Hangman Game
-```
-A simple text-based Hangman game built with Python. Guess the hidden word one letter at a time before the hangman is fully drawn!
-```
-## 📋 How to Play
-1. The game picks a random secret word.
-2. You guess one letter at a time.
-3. A correct guess reveals that letter in the word.
-4. A wrong guess adds a body part to the hangman drawing.
-5. You win by guessing all letters before **6 wrong guesses**.
-```
-## 🚀 How to Run
-Make sure Python is installed, then run
-```
-bash
-python hangman.py
-```
-## 🗂️ Project Structure
-hangman.py   →   main game file (all logic is here)
-README.md    →   this file
-```
-## 🧠 Concepts Used
-- `random` — picks a random word from the list
-- `while` loop — keeps the game running each round
-- `if-else` — checks whether a guess is correct or wrong
-- `strings` — builds the word display with blanks
-- `sets` — tracks guessed letters without duplicates
-*Built as a beginner Python project.*
+
+This is a simple Hangman game built using Python and Flask.
+
+## 🚀 Features
+
+* A–Z letter buttons
+* 6 lives system
+* Win and Lose screen
+* Shows correct word after game over
+* Restart game option
+
+## ▶️ Run Locally
+
+1. Install Flask:
+   pip install flask
+
+2. Run the app:
+   python app.py
+
+3. Open in browser:
+   http://127.0.0.1:5000/
+
+## 🌐 Live Link
+
+(Add your deployed link here)
+
+## 👩‍💻 Author
+
+Sweta Lodhi

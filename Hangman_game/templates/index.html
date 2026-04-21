@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+
+```
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #121212;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    .word {
+        font-size: 42px;
+        letter-spacing: 12px;
+        margin: 20px 0;
+    }
+
+    .lives {
+        font-size: 24px;
+        color: #ff4d4d;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    button {
+        margin: 5px;
+        padding: 10px 14px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background: #1f1f1f;
+        color: white;
+    }
+
+    button:hover {
+        background: #333;
+    }
+
+    .used {
+        background: gray;
+        cursor: not-allowed;
+    }
+
+    .result {
+        margin-top: 20px;
+        font-size: 26px;
+    }
+
+    .reset {
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: green;
+        color: white;
+        font-size: 16px;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<h1>🎮 Hangman Game</h1>
+
+<div class="container">
+
+```
+<div class="word">{{ display }}</div>
+
+<div class="lives">
+    Lives Left: {{ 6 - wrong }} ❤️
+</div>
+
+{% if not win and not lose %}
+<div class="buttons">
+    <form method="POST">
+        {% for letter in 'abcdefghijklmnopqrstuvwxyz' %}
+            <button name="letter" value="{{ letter }}"
+                {% if letter in guessed %}class="used" disabled{% endif %}>
+                {{ letter }}
+            </button>
+        {% endfor %}
+    </form>
+</div>
+{% endif %}
+
+{% if win %}
+    <div class="result">🏆 You Win!</div>
+    <p>Correct Word: <b>{{ word }}</b></p>
+{% endif %}
+
+{% if lose %}
+    <div class="result">💀 You Lose!</div>
+    <p>Correct Word: <b>{{ word }}</b></p>
+{% endif %}
+
+<a href="/reset">
+    <button class="reset">Play Again 🔄</button>
+</a>
+```
+
+</div>
+
+</body>
+</html>
+

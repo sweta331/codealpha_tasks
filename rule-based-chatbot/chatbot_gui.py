@@ -4,11 +4,9 @@ import tkinter as tk
 def chatbot_response(user_input):
     user_input = user_input.lower()
 
-    if user_input == "hello":
+    if "hello" in user_input:
         return "Hello there!"
-    elif user_input == "how are you":
-        return "I'm fine, thanks for asking!"
-    elif user_input == "your name":
+    elif "who are you" in user_input:
         return "I am a chatbot"
     elif user_input == "joke":
         return "okay : Why did the computer catch a cold? Because it left its Windows open!"

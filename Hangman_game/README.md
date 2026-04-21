@@ -1,5 +1,4 @@
 # 🎮 Hangman Game
-
 This is a simple Hangman game built using Python and Flask.
 
 ## 🚀 Features
@@ -28,3 +27,6 @@ This is a simple Hangman game built using Python and Flask.
 ## 👩‍💻 Author
 
 Sweta Lodhi
+## 📸 Screenshot
+
+![Hangman Game](hangman_game.png)

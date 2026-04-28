@@ -3,11 +3,18 @@
 This repository contains two Python projects developed as part of the CodeAlpha Internship Program.
 ---
 ## 🤖 Rule-Based Chatbot
-A simple chatbot built using Python with rule-based (if-else) logic.
+This project is a simple rule-based chatbot built using Python and Tkinter.
+It takes user input and responds with predefined replies.
 ### Features:
 - Keyword-based responses  
 - Simple conversational flow  
-- Beginner-friendly project  
+- Beginner-friendly project
+---
+- **technologies used**
+- Python
+- Tkinter (GUI)
+- if-elif conditions
+- functions
 ---
 ## 🎮 Hangman Game (Flask Web App)
 

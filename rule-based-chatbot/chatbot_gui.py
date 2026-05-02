@@ -24,11 +24,11 @@ def send_message(event=None):
     if user_input == "":
         return
 
-# show user input
+    # show user input
     chat_log.config(state=tk.NORMAL)
     chat_log.insert(tk.END, "You: " + user_input + "\n")
 
-# bot response
+    # bot response
     response = chatbot_response(user_input)
     chat_log.insert(tk.END, "Bot: " + response + "\n\n")
 
@@ -37,11 +37,11 @@ def send_message(event=None):
 
     entry.delete(0, tk.END)
 
-# exit condition
+    # exit condition
     if user_input.lower() in ["bye", "goodbye"]:
         root.after(1000, root.destroy)
 
-# git setup
+# GUI setup
 root = tk.Tk()
 root.title("Basic Chatbot")
 
@@ -64,6 +64,4 @@ chat_log.insert(tk.END, "Bot: Hello! Type something to chat 😊\n\n")
 chat_log.config(state=tk.DISABLED)
 
 # run app
-root.mainloop()
-
 root.mainloop()

@@ -26,8 +26,12 @@ python chatbot_gui.py
 You can try:
 * hello
 * how are you
-* your name
+* who are you
 * bye
+```
+## 📸 Chatbot output Screenshot
+![Chatbot Screenshot](rule-based-chatbot-ss.png)
+```
 ## 👩‍💻 Author
 Sweta lodhi
 ## ⭐ Note

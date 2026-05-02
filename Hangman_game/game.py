@@ -1,6 +1,6 @@
 import random
 
-WORDS = ["python", "hangman", "science", "rocket", "laptop"]
+WORDS = ["python", "hangman", "game", "aeroplane", "mouse"]
 
 def start_game():
     return {

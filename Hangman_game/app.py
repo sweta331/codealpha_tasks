@@ -30,11 +30,10 @@ def home():
     word=state["word"]
 )
 
-# ✅ FIXED RESET
 @app.route("/reset")
 def reset():
     session.clear()
-    return redirect(url_for("home"))   # 👈 important
+    return redirect(url_for("home"))  
 
 if __name__ == "__main__":
     app.run(debug=True)
